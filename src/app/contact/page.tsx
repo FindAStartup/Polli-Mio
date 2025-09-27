@@ -283,4 +283,4 @@ const ContactPage: React.FC = () => {
     )
 }
 
-export default page
+export default ContactPage
