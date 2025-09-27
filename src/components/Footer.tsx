@@ -21,9 +21,10 @@ const Footer: React.FC = () => {
               />
             </Link>
             <p className="text-gray-700 text-sm text-center md:text-left max-w-xs leading-relaxed">
-              Freshness Isn't an Option, <br />
+              {"Freshness Isn't an Option"}, <br />
               Freshness is the Standard
             </p>
+
           </div>
 
           {/* Quick Links Section */}

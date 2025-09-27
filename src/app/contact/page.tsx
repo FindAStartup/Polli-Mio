@@ -16,7 +16,7 @@ interface FormData {
     message: string;
 }
 
-const page: React.FC = () => {
+const ContactPage: React.FC = () => {
     const about = {
         falledChicken: '/assets/falledChicken.png',
     }
