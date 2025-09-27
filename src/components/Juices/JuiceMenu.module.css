@@ -1,0 +1,228 @@
+/* General Container and Layout */
+.container {
+  width: 100%;
+  background-color: #fff;
+  font-family: sans-serif;
+  text-align: center;
+  overflow: hidden; /* Prevents seeing fruit before they enter */
+}
+
+/* Responsive Background Wrapper */
+.backgroundWrapper {
+  position: relative;
+  width: 100%;
+  height: 30vw; /* Responsive height based on viewport */
+  min-height: 30vw; /* Minimum height for smaller screens */
+  max-height: 30vw; /* Maximum height for larger screens */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.backgroundImage {
+  object-fit: fill;
+  object-position: center;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.title {
+  position: relative;
+  top:-8vw;
+  z-index: 2;
+  font-size:2.5vw; /* Responsive font size */
+  color: #fff;
+  margin: 0;
+}
+
+/* Juice Container */
+.juiceContainer {
+  padding: 40px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* First Layer - 3 items */
+.firstLayer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  margin-bottom: 60px;
+  justify-items: center;
+}
+
+/* Second Layer - 2 items */
+.secondLayer {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+/* Individual Juice Item Styling */
+.juiceItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 320px;
+}
+
+.juiceItem h3 {
+  margin-top: 15px;
+  font-size: clamp(1rem, 2.5vw, 1.3rem); /* Responsive font size */
+  color: #555;
+  font-weight: 600;
+}
+
+.animationWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 35vw;
+  height: 20vw;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.juiceImage {
+  border-radius: 15px;
+  object-fit: contain;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Base style for all falling fruits */
+.fruit {
+  position: absolute;
+  z-index: 10; /* Ensure fruit is on top of the glass */
+  pointer-events: none; /* Make images unclickable */
+  animation-name: fall;
+}
+
+/* Keyframe Animation for Falling Effect */
+@keyframes fall {
+  0% {
+    transform: translateY(-2000px) ;
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.5;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+/* Specific Positions & Delays for each fruit */
+
+/* --- Cocktail / Strawberry --- */
+.strawberry1 {
+  left:35%;
+  animation-duration: 3s;
+  animation-delay: 0s;
+}
+
+/* --- Kiwi --- */
+.kiwi1 {
+  left: 35%;
+  animation-duration: 4s;
+  animation-delay: 0.5s;
+}
+
+/* --- Orange --- */
+.orange1 {
+  left: 45%;
+  animation-duration: 4.5s;
+  animation-delay: 0.2s;
+}
+
+/* --- Cherry --- */
+.cherry1 {
+  left: 38%;
+  animation-duration: 3s;
+  animation-delay: 0.8s;
+}
+
+/* --- Mix Fruit --- */
+.mixfruit1 {
+  left: 35%;
+  animation-duration: 3.5s;
+  animation-delay: 1.2s;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .backgroundWrapper {
+    height: 30vh;
+    min-height: 250px;
+  }
+  
+  .title {
+    font-size: clamp(1.5rem, 6vw, 2.5rem);
+  }
+  
+  .juiceContainer {
+    padding: 30px 15px;
+  }
+  
+  .firstLayer {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  
+  .secondLayer {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .animationWrapper {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .fruit {
+    width: 40px !important;
+    height: 40px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .backgroundWrapper {
+    height: 25vh;
+    min-height: 200px;
+  }
+  
+  .juiceContainer {
+    padding: 20px 10px;
+  }
+  
+  .animationWrapper {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .fruit {
+    width: 35px !important;
+    height: 35px !important;
+  }
+}
+
+/* Large screen adjustments */
+@media (min-width: 1200px) {
+  .firstLayer {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+    margin: 0 auto 60px auto;
+  }
+  
+  .secondLayer {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}

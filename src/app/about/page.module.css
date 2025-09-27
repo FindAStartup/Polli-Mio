@@ -1,0 +1,7 @@
+.textGrad {
+  background: linear-gradient(135deg, #d42027, #f15a24);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
