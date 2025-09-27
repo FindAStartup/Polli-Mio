@@ -5,12 +5,10 @@ import Image from 'next/image';
 import styles from './HeroAnimation.module.css';
 
 // Import your assets
-import logo from '../../../public/logo.png';
 import bucket1Img from '../../../public/assets/bucket.png'
 ;import bucket2Img from '../../../public/assets/bucket2.png';
 import chicken1Img from '../../../public/assets/chicken1.png';
-import chicken2Img from '../../../public/assets/chicken1.png';
-import chicken3Img from '../../../public/assets/chicken2.png';
+
 
 const HeroAnimation = () => {
   const lineRefs = useRef([]);
