@@ -68,9 +68,11 @@ const Footer: React.FC = () => {
             <ul className="space-y-4">
               <li className="flex items-center justify-center md:justify-start">
                 <FaMapMarkerAlt className="text-red-500 mr-3 flex-shrink-0" />
+                <a href="https://maps.app.goo.gl/n4n6CD5kZ36YUryT6">
                 <span className="text-gray-600 text-sm">
                   Thazhava Jn,Kattanam
                 </span>
+                </a>
               </li>
               <li className="flex items-center justify-center md:justify-start">
                 <FaEnvelope className="text-red-500 mr-3 flex-shrink-0" />
