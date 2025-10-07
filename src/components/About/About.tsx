@@ -3,7 +3,6 @@ import styles from './AboutUs.module.css';
 import React from 'react';
   import falledChicken from '../../../public/assets/falledChicken.png'
 
-
 const AboutUs: React.FC = () => {
 
 

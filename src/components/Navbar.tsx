@@ -50,10 +50,10 @@ const Navbar: React.FC = () => {
           {/* Desktop Navigation (Right Side) */}
           <div className="hidden lg:flex items-center space-x-5">
             <div className="flex items-center space-x-3">
-              <Link href="https://facebook.com" aria-label="Facebook" className="p-2 border border-gray-300 rounded-full hover:bg-gray-100 transition-colors">
+              <Link href="https://www.facebook.com/p/Pollo-Mio-100064269213512/" aria-label="Facebook" className="p-2 border border-gray-300 rounded-full hover:bg-gray-100 transition-colors">
                 <FaFacebookF className="text-gray-600 h-4 w-4" />
               </Link>
-              <Link href="#" aria-label="Instagram" className="p-2 border border-gray-300 rounded-full hover:bg-gray-100 transition-colors">
+              <Link href="https://www.instagram.com/pollomio90?utm_source=ig_web_button_share_sheet&igsh=OWN2czM1azI1aGVr" aria-label="Instagram" className="p-2 border border-gray-300 rounded-full hover:bg-gray-100 transition-colors">
                 <FaInstagram className="text-gray-600 h-4 w-4" />
               </Link>
               <Link href="#" aria-label="Twitter" className="p-2 border border-gray-300 rounded-full hover:bg-gray-100 transition-colors">
@@ -112,10 +112,10 @@ const Navbar: React.FC = () => {
               Ph: +91 92077 77311
             </Link>
             <div className="flex items-center space-x-5">
-              <Link href="facebook.com" aria-label="Facebook" className="p-3 border border-gray-300 rounded-full hover:bg-gray-100 transition-colors">
+              <Link href="https://www.facebook.com/p/Pollo-Mio-100064269213512/" aria-label="Facebook" className="p-3 border border-gray-300 rounded-full hover:bg-gray-100 transition-colors">
                 <FaFacebookF className="text-gray-600 h-5 w-5" />
               </Link>
-              <Link href="#" aria-label="Instagram" className="p-3 border border-gray-300 rounded-full hover:bg-gray-100 transition-colors">
+              <Link href="https://www.instagram.com/pollomio90?utm_source=ig_web_button_share_sheet&igsh=OWN2czM1azI1aGVr" aria-label="Instagram" className="p-3 border border-gray-300 rounded-full hover:bg-gray-100 transition-colors">
                 <FaInstagram className="text-gray-600 h-5 w-5" />
               </Link>
               <Link href="#" aria-label="Twitter" className="p-3 border border-gray-300 rounded-full hover:bg-gray-100 transition-colors">
@@ -127,7 +127,6 @@ const Navbar: React.FC = () => {
       </div>
       
       {/* Orange/Red Gradient Bar */}
-      <div className="h-1 bg-gradient-to-r from-orange-500 to-red-600"></div>
     </header>
   );
 };

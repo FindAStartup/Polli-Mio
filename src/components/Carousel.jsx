@@ -37,7 +37,7 @@ export default function Carousel() {
   const extendedSpecials = [...specials, ...specials, ...specials];
 
   return (
-    <div className="bg-black min-h-screen flex flex-col items-center justify-center font-sans py-8 sm:py-12 lg:py-16">
+<div className="bg-black h-[400] md:h-[800] lg flex flex-col items-center justify-center font-sans">
       <style>{`
         @keyframes scroll-mobile {
           0% { transform: translateX(0); }
@@ -115,9 +115,9 @@ export default function Carousel() {
         }
       `}</style>
       
-      <div className="w-full flex flex-col items-center px-4 sm:px-6 lg:px-8">
+      <div className="w-full flex flex-col items-center ">
         {/* Title - Responsive */}
-        <h1 className="text-white text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 sm:mb-8 lg:mb-12 text-center tracking-wide">
+        <h1 className="text-white text-2xl xs:text-3xl font-[montserrat] sm:text-4xl md:text-3xl lg:text-4xl font-[400] mb-6 sm:mb-8 lg:mb-12 text-center tracking-wide mt-10">
           Our Specials
         </h1>
         
@@ -129,7 +129,7 @@ export default function Carousel() {
                 key={`${item.id}-${index}`} 
                 className="flex-shrink-0 mx-2 sm:mx-3 lg:mx-4"
               >
-                <div className="group relative overflow-hidden border-2 border-red-600 shadow-lg shadow-red-600/20 transition-all duration-300 hover:scale-105 hover:shadow-red-600/40 rounded-lg
+                <div className="group relative overflow-hidden border-1 border-red-600 shadow-lg shadow-red-600/20 transition-all duration-300 hover:scale-105 hover:shadow-red-600/40 rounded-lg
                   w-44 sm:w-56 lg:w-72 xl:w-80">
                   
                   {/* Image Container */}
@@ -149,7 +149,7 @@ export default function Carousel() {
                   
                   {/* Title Container */}
                   <div className="bg-gradient-to-r from-orange-500 to-red-500 p-2 sm:p-3 lg:p-4 text-center">
-                    <h3 className="text-white text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide leading-tight">
+                    <h3 className="text-black text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide leading-tight">
                       {item.name}
                     </h3>
                   </div>
@@ -161,7 +161,7 @@ export default function Carousel() {
       </div>
       
       {/* Bottom spacing */}
-      <div className="py-4 sm:py-6 lg:py-8"></div>
+      <div className="py-4"></div>
     </div>
   );
 }

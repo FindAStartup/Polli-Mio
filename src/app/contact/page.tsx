@@ -86,18 +86,18 @@ const ContactPage: React.FC = () => {
             
             {/* Hero Section - Fully Responsive */}
            <div className="relative bg-gradient-to-r from-orange-500 to-red-500 min-h-[400px] flex items-center">
-                  <div className="container mx-auto pr-10 flex items-center justify-between">
+                  <div className="container mx-auto pr-5 flex items-center justify-between">
                     <div className="flex-2">
                       <Image
                         src={about.falledChicken}
                         alt="Fried Chicken"
-                        width={400}
+                        width={500}
                         height={400}
-                        className="object-contain w-500 md:w-100 "
+                        className="object-contain w-600 md:w-150 "
                       />
                     </div>
                     <div className="flex-1 text-right">
-                      <h1 className="text-white justify-center text-5xl md:text-6xl md:text: font-bold tracking-wider">
+                      <h1 className="text-white justify-center text-4xl md:text-6xl md:text: font-bold">
                         CONTACT US
                       </h1>
                     </div>

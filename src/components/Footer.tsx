@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
               />
             </Link>
             <p className="text-gray-700 text-sm text-center md:text-left max-w-xs leading-relaxed">
-              {"Freshness Isn't an Option"}, <br />
+              {"Freshness isn't an Option"}, <br />
               Freshness is the Standard
             </p>
 
@@ -99,7 +99,7 @@ const Footer: React.FC = () => {
       <div className="border-t border-gray-200 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <p className="text-center text-gray-500 text-sm">
-            Copyright © 2025 Pollo Mio CHICKEN & SIDES, All Rights Reserved
+            Copyright © 2025 Pollo Mio Chicken & Sides, All Rights Reserved
           </p>
         </div>
       </div>

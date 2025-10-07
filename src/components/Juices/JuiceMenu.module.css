@@ -37,28 +37,64 @@
 }
 
 /* Juice Container */
-.juiceContainer {
+/* .juiceContainer {
   padding: 40px 20px;
   max-width: 1400px;
   margin: 0 auto;
+} */
+
+
+.juiceGrid {
+  padding: 40px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  justify-items: center;
 }
 
+@media (max-width: 768px) {
+  .juiceGrid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
+    gap: 20px;
+    padding: 30px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .juiceGrid {
+    grid-template-columns: repeat(2, 1fr); /* Still 2 columns on small mobile */
+    gap: 15px;
+    padding: 20px 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .juiceGrid {
+    max-width: 1200px;
+  }
+}
+
+
+
+
 /* First Layer - 3 items */
-.firstLayer {
+/* .firstLayer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 40px;
   margin-bottom: 60px;
   justify-items: center;
-}
+} */
 
 /* Second Layer - 2 items */
-.secondLayer {
+/* .secondLayer {
   display: flex;
   justify-content: center;
   gap: 80px;
   flex-wrap: wrap;
-}
+} */
 
 /* Individual Juice Item Styling */
 .juiceItem {
@@ -163,6 +199,7 @@
   
   .title {
     font-size: clamp(1.5rem, 6vw, 2.5rem);
+    top:-13vw;
   }
   
   .juiceContainer {
@@ -170,25 +207,31 @@
   }
   
   .firstLayer {
-    grid-template-columns: 1fr;
-    gap: 30px;
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+    gap: 20px;
     margin-bottom: 40px;
   }
   
   .secondLayer {
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+    gap: 20px;
+    justify-items: center;
   }
   
   .animationWrapper {
-    width: 250px;
-    height: 250px;
+    width: 100%;
+    max-width: 180px;
+    height: 180px;
   }
   
   .fruit {
     width: 40px !important;
     height: 40px !important;
+  }
+  
+  .juiceItem {
+    max-width: 100%;
   }
 }
 
@@ -208,8 +251,8 @@
   }
   
   .fruit {
-    width: 35px !important;
-    height: 35px !important;
+    width: 14vw !important;
+    height: 14vw !important;
   }
 }
 
