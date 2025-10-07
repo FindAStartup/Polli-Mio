@@ -1,0 +1,42 @@
+.background {
+  position: relative;
+  background-image: url('/assets/burgerm.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 50vh;  
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  padding: 2rem 1rem;  /* Better spacing control */
+  font-family: 'montserrat';
+  color: white;
+  top:0px;
+  text-align: center;
+  font-size: 6vw;  /* Larger for mobile readability */
+  position: relative;
+  top:-20vw;
+}
+
+/* Medium screen and up (>= 768px) */
+@media (min-width: 768px) {
+  .background {
+    background-image: url('/assets/burger.png');
+     background-size: cover;
+    height: 80vh;  /* Changed from 30vh to 60vh */
+    min-height: 500px;  
+  }
+
+  .text {
+    text-align: center;
+    font-size: 3vw;
+    top:-16vw;
+    padding: 0;  /* Reset padding for desktop */
+  }
+}
