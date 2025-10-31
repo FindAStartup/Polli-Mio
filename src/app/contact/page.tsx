@@ -39,7 +39,7 @@ const ContactPage: React.FC = () => {
         try {
             console.log(formData);
             
-            const emailing = await emailjs.send("service_2qn29wh", "template_27qqqk7", {
+            const emailing = await emailjs.send("service_32f60r5", "template_f3ii1ph", {
                 name: formData.firstName,
                 email: formData.email,
                 phone: formData.phone,
@@ -137,7 +137,7 @@ const ContactPage: React.FC = () => {
                                     <span className="text-[#f15a24] text-base xs:text-lg sm:text-xl lg:text-2xl flex-shrink-0">
                                         <MdOutlineMail/>
                                     </span>  
-                                    <span className="break-all">pollomio@gmail.com</span>
+                                    <span className="break-all">Pollomio107@gmail.com</span>
                                 </div>
                                 
                                 <div className="flex items-center justify-center lg:justify-start gap-2 sm:gap-3 text-sm xs:text-base sm:text-lg lg:text-xl">

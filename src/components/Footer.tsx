@@ -80,7 +80,7 @@ const Footer: React.FC = () => {
                   href="mailto:pollomio@gmail.com" 
                   className="text-gray-600 hover:text-red-600 transition-colors text-sm"
                 >
-                  pollomio@gmail.com
+                  Pollomio107@gmail.com
                 </a>
               </li>
               <li className="flex items-center justify-center md:justify-start">
