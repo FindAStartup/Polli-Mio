@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "Pollo Mio",
   description: "Pollo Mio Chicken & Sides",
    icons: {
-    icon: "./favicon.jpg",
+    icon: "/favicon.jpg",
   },
 };
 
