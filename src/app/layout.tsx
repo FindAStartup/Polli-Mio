@@ -31,7 +31,7 @@ export default function RootLayout({
         <meta name="google-site-verification" content="NC6T0M4-d6kx3bi-D_J6F8851kVi8e-pUK2m1NyEqVc" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased over`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>
