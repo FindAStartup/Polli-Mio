@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useState } from 'react';
 
 // Mock images for demonstration - replace with your actual image imports
@@ -11,9 +12,9 @@ const imageUrls = {
 export default function Carousel() {
 
 
-const [items, setItems] = useState([]);
+  const [items, setItems] = useState([]);
 
- useEffect(() => {
+  useEffect(() => {
     async function load() {
       try {
         const res = await fetch(`/api/products`)
@@ -34,9 +35,9 @@ const [items, setItems] = useState([]);
   }, [])
 
 
-  useEffect(()=>{
+  useEffect(() => {
     console.log(items)
-  },[items])
+  }, [items])
 
   // Array of your special dishes
   const specials = items;
@@ -46,7 +47,7 @@ const [items, setItems] = useState([]);
   const extendedSpecials = [...specials, ...specials, ...specials];
 
   return (
-<div className=" h-[600] md:h-[800] lg flex flex-col items-center justify-center font-sans">
+    <div className=" h-[600] md:h-[800] lg flex flex-col items-center justify-center font-sans">
       <style>{`
         @keyframes scroll-mobile {
           0% { transform: translateX(0); }
@@ -123,39 +124,39 @@ const [items, setItems] = useState([]);
           animation-play-state: paused;
         }
       `}</style>
-      
+
       <div className="w-full h-150 lg:min-h-screen flex flex-col items-center ">
         {/* Title - Responsive */}
         <h1 className="text-black text-2xl xs:text-3xl font-[montserrat] text-4xl md:text-5xl lg:text-6xl font-[400] mb-5 sm:mb-2 lg:mb-12 text-center tracking-wide mt-20">
           Our Specials
         </h1>
-        
+
         {/* Carousel Container */}
         <div className="w-full mt-10 overflow-hidden carousel-container">
           <ul className="flex items-center animate-scroll hover:animation-play-state-paused">
             {extendedSpecials.map((item, index) => (
-              <li 
-                key={`${item.id}-${index}`} 
+              <li
+                key={`${item.id}-${index}`}
                 className="flex-shrink-0 mx-2 sm:mx-3 lg:mx-4"
               >
                 <div className="group relative overflow-hidden border-1 border-red-600 shadow-lg shadow-red-600/20 transition-all duration-300 hover:scale-105 hover:shadow-red-600/40 rounded-lg
                   w-44 sm:w-56 lg:w-72 xl:w-80">
-                  
+
                   {/* Image Container */}
                   <div className="relative overflow-hidden">
-                    <img 
-                      src={item.image_url} 
-                      alt={item.name} 
+                    <img
+                      src={item.image_url}
+                      alt={item.name}
                       className="w-full h-32 xs:h-36 sm:h-40 md:h-44 lg:h-48 xl:h-80 object-cover transition-transform duration-300 group-hover:scale-110"
-                      onError={(e) => { 
-                        e.currentTarget.onerror = null; 
-                      
+                      onError={(e) => {
+                        e.currentTarget.onerror = null;
+
                       }}
                     />
                     {/* Overlay effect on hover */}
                     <div className="absolute  bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
                   </div>
-                  
+
                   {/* Title Container */}
                   <div className="bg-orange-500 p-2 sm:p-3 lg:p-4 text-center">
                     <h3 className="text-black text-xs xs:text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl tracking-wide leading-tight">
@@ -168,7 +169,7 @@ const [items, setItems] = useState([]);
           </ul>
         </div>
       </div>
-      
+
       {/* Bottom spacing */}
       <div className=" py-0 lg:py-10"></div>
     </div>

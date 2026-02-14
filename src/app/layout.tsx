@@ -13,10 +13,28 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Pollo Mio",
-  description: "Pollo Mio Chicken & Sides",
+  metadataBase: new URL("https://www.pollomio.in"),
+  title: {
+    default: "Best Burger Shop in Kattanam | Pollomio",
+    template: "%s | Pollo Mio",
+  },
+  description: "Looking for the best burger shop in Kattanam? Pollomio offers fresh, juicy burgers, loaded fries, and fast delivery for the ultimate tasty burger experience.",
+
   icons: {
     icon: "/favicon.jpg",
+  },
+  openGraph: {
+    title: "Best Burger Shop in Kattanam | Pollomio",
+    description: "Looking for the best burger shop in Kattanam? Pollomio offers fresh, juicy burgers, loaded fries, and fast delivery for the ultimate tasty burger experience.",
+    url: "https://www.pollomio.in",
+    siteName: "Pollo Mio",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Best Burger Shop in Kattanam | Pollomio",
+    description: "Looking for the best burger shop in Kattanam? Pollomio offers fresh, juicy burgers, loaded fries, and fast delivery for the ultimate tasty burger experience.",
   },
 };
 
