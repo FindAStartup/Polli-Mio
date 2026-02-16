@@ -15,7 +15,7 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.pollomio.in"),
+
   alternates: {
     canonical: "https://www.pollomio.in",
   },

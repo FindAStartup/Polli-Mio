@@ -50,7 +50,7 @@ export default function AboutClient() {
           <div className="flex-2">
             <Image
               src={about.falledChicken}
-              alt="Fried Chicken"
+              alt="Top grilled chicken in Kerala - Pollomio"
               width={500}
               height={400}
               className="object-contain w-600 md:w-150 "
@@ -91,14 +91,14 @@ export default function AboutClient() {
           <div ref={sectionRef} className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             {/* Grilled - Slide in from left */}
             <div className={`text-center transition-all duration-1000 ease-out ${isVisible
-                ? 'translate-x-0 opacity-100'
-                : '-translate-x-full opacity-0'
+              ? 'translate-x-0 opacity-100'
+              : '-translate-x-full opacity-0'
               }`}>
               <h3 className="text-2xl font-[400] font-[montserrat] mb-4">Grilled</h3>
               <div className="h-100  rounded-lg">
                 <Image
                   src={about.grilled}
-                  alt="Grilled"
+                  alt="Top grilled chicken in Kerala - Pollomio"
                   width={400}
                   height={400}
                   className="object-contain mx-auto mt-2"
@@ -108,14 +108,14 @@ export default function AboutClient() {
 
             {/* Burgers - Slide in from bottom */}
             <div className={`text-center transition-all duration-1000 ease-out delay-200 ${isVisible
-                ? 'translate-y-0 opacity-100'
-                : 'translate-y-full opacity-0'
+              ? 'translate-y-0 opacity-100'
+              : 'translate-y-full opacity-0'
               }`}>
               <h3 className="text-2xl font-[400] font-[montserrat] mb-4">Burgers</h3>
               <div className="h-100  rounded-lg">
                 <Image
                   src={about.burgers}
-                  alt="Burgers"
+                  alt="Top grilled chicken in Kerala - Pollomio"
                   width={500}
                   height={500}
                   className="object-contain mx-auto mt-2"
@@ -125,14 +125,14 @@ export default function AboutClient() {
 
             {/* Juices - Slide in from right */}
             <div className={`text-center transition-all duration-1000 ease-out delay-400 ${isVisible
-                ? 'translate-x-0 opacity-100'
-                : 'translate-x-full opacity-0'
+              ? 'translate-x-0 opacity-100'
+              : 'translate-x-full opacity-0'
               }`}>
               <h3 className="text-2xl font-[400] font-[montserrat] mb-4">Juices</h3>
               <div className="h-100 rounded-lg">
                 <Image
                   src={about.juices}
-                  alt="Juices"
+                  alt="Top grilled chicken in Kerala - Pollomio"
                   width={300}
                   height={300}
                   className="object-contain mx-auto mt-2"
@@ -154,7 +154,7 @@ export default function AboutClient() {
               <div className="relative mx-1">
                 <Image
                   src={about.fire}
-                  alt="Fire"
+                  alt="Top grilled chicken in Kerala - Pollomio"
                   width={2200}
                   height={90}
                 />

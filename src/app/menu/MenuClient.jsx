@@ -137,7 +137,7 @@ export default function MenuClient() {
                     <div className="relative w-full h-56 bg-muted overflow-hidden">
                       <img
                         src={p?.image_url ? p.image_url : "/assets/placeholder.png"}
-                        alt={p.name}
+                        alt="Best Fried Chicken & Burger in Kattanam - Pollomio"
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -170,8 +170,8 @@ export default function MenuClient() {
                     <PaginationPrevious
                       onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
                       className={`${currentPage === 1
-                          ? "pointer-events-none opacity-50 cursor-not-allowed"
-                          : "cursor-pointer hover:bg-muted"
+                        ? "pointer-events-none opacity-50 cursor-not-allowed"
+                        : "cursor-pointer hover:bg-muted"
                         }`}
                     />
                   </PaginationItem>
@@ -197,8 +197,8 @@ export default function MenuClient() {
                     <PaginationNext
                       onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
                       className={`${currentPage === totalPages
-                          ? "pointer-events-none opacity-50 cursor-not-allowed"
-                          : "cursor-pointer hover:bg-muted"
+                        ? "pointer-events-none opacity-50 cursor-not-allowed"
+                        : "cursor-pointer hover:bg-muted"
                         }`}
                     />
                   </PaginationItem>

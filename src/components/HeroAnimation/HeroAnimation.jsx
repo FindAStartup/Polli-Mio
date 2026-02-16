@@ -6,7 +6,7 @@ import styles from './HeroAnimation.module.css';
 
 // Import your assets
 import bucket1Img from '../../../public/assets/bucket.png'
-;import bucket2Img from '../../../public/assets/bucket2.png';
+  ; import bucket2Img from '../../../public/assets/bucket2.png';
 import chicken1Img from '../../../public/assets/chicken1.png';
 
 
@@ -35,14 +35,14 @@ const HeroAnimation = () => {
     }, 1500); // Adjusted timing
 
     // 3. Animate third line and bring back Bucket 1
-     setTimeout(() => {
+    setTimeout(() => {
       lineRefs.current[2]?.classList.add(styles.isVisible);
-       bucket2Ref.current?.classList.remove(styles.isVisible);
+      bucket2Ref.current?.classList.remove(styles.isVisible);
       bucket1Ref.current?.classList.add(styles.isVisible);
       // Add rotation class to chicken pieces
       chickenRefs.current.forEach(piece => piece?.classList.add(styles.rotated));
     }, 2500);  // Adjusted timing
-    
+
     // // 4. Show the floating chicken and texture
     // setTimeout(() => {
     //   chickenRefs.current.forEach(piece => piece?.classList.add(styles.isVisible));
@@ -66,16 +66,16 @@ const HeroAnimation = () => {
           </span>
         </h1>
       </div>
-      
+
       {/* The images section remains the same */}
       <div className={styles.heroImages}>
-        <Image src={bucket1Img} alt="Bucket of Fried Chicken 1" className={styles.bucket} id={styles.bucket1} ref={bucket1Ref} />
-        <Image src={bucket2Img} alt="Bucket of Fried Chicken 2" className={styles.bucket} id={styles.bucket2} ref={bucket2Ref} />
-        <Image src={chicken1Img} alt="Fried Chicken Piece 1" className={styles.chickenPiece} ref={el => chickenRefs.current[0] = el} />
-         
-          
+        <Image src={bucket1Img} alt="Best burger shop in Kattanam - Pollomio" className={styles.bucket} id={styles.bucket1} ref={bucket1Ref} />
+        <Image src={bucket2Img} alt="Best burger shop in Kattanam - Pollomio" className={styles.bucket} id={styles.bucket2} ref={bucket2Ref} />
+        <Image src={chicken1Img} alt="Best burger shop in Kattanam - Pollomio" className={styles.chickenPiece} ref={el => chickenRefs.current[0] = el} />
+
+
       </div>
-    </main> 
+    </main>
   );
 };
 
