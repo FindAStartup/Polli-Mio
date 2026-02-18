@@ -65,6 +65,15 @@ export default function RootLayout({
         </Script>
 
         {/* End Google Tag Manager */}
+
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content="Pollomio - Fried Chicken & Burgers" />
+        <meta property="og:description" content="Delicious fried chicken, burgers and fast food." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://pollomio.in/" />
+        <meta property="og:image" content=" " />
+
+
       </head>
       <body
         className={`${inter.variable} ${robotoMono.variable} antialiased over`}
