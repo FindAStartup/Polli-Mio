@@ -21,17 +21,17 @@ export const metadata: Metadata = {
   },
 
   title: {
-    default: "Best Burger Shop in Kattanam | Pollomio",
+    default: "Best Fried Chicken in Kattanam | Pollomio",
     template: "%s | Pollo Mio",
   },
-  description: "Looking for the best burger shop in Kattanam? Pollomio offers fresh, juicy burgers, loaded fries, and fast delivery for the ultimate tasty burger experience.",
+  description: "Enjoy the best fried chicken in Kattanam at Pollomio. Crispy chicken, tasty burgers, and fresh meals served daily. Visit today for great taste and quality now",
 
   icons: {
     icon: "/favicon.jpg",
   },
   openGraph: {
-    title: "Best Burger Shop in Kattanam | Pollomio",
-    description: "Looking for the best burger shop in Kattanam? Pollomio offers fresh, juicy burgers, loaded fries, and fast delivery for the ultimate tasty burger experience.",
+    title: "Best Fried Chicken in Kattanam | Pollomio",
+    description: "Enjoy the best fried chicken in Kattanam at Pollomio. Crispy chicken, tasty burgers, and fresh meals served daily. Visit today for great taste and quality now",
     url: "https://www.pollomio.in",
     siteName: "Pollo Mio",
     locale: "en_US",
@@ -39,8 +39,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best Burger Shop in Kattanam | Pollomio",
-    description: "Looking for the best burger shop in Kattanam? Pollomio offers fresh, juicy burgers, loaded fries, and fast delivery for the ultimate tasty burger experience.",
+    title: "Best Fried Chicken in Kattanam | Pollomio",
+    description: "Enjoy the best fried chicken in Kattanam at Pollomio. Crispy chicken, tasty burgers, and fresh meals served daily. Visit today for great taste and quality now",
   },
 };
 
